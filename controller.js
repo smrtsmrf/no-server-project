@@ -44,9 +44,6 @@ angular.module('xkcdapp').controller('mainCtrl', ['$scope', 'service', function 
  	 return Math.floor(Math.random() * (max - min + 1)) + min;
 	}
 
-	// $scope.clear = function () {
-	// 	delete $scope.comic;
-
-	// }
+	
 
 }])

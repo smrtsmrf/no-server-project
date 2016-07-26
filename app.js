@@ -38,9 +38,7 @@
 			templateUrl: 'specific.html', 
 			// controller: 'mainCtrl',
 			controller: function ($scope, service) {
-				// $scope.clear = function () {
-				// 	delete $scope.comic;
-				// }
+
 				$scope.doThis = function (num) {
 					console.log('num', num);
 					 service.getComic(num).then(function (response) {
@@ -62,7 +60,7 @@
 					$scope.doThis();
 			 	 return Math.floor(Math.random() * (max - min + 1)) + min;
 				}
-				
+
 				$scope.doThis = function (num) {
 					console.log('num', num);
 					 service.getComic(num).then(function (response) {
