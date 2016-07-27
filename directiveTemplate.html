@@ -1,10 +1,9 @@
 <main>
 
-	<div>{{comic.title}}</div>
-	<div>{{comic.month}} {{comic.day}} {{comic.year}}</div>
+	<div><h1>{{comic.title}}</h1></div>
+	
+	<div>{{comic.date}}</div>
 
+	<img ng-src="{{comic.img}}" title="{{comic.alt}}">
 
-	<img ng-src="{{comic.img}}">
-
-	<div>{{comic.alt}}</div>
 </main>
