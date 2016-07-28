@@ -20,7 +20,8 @@
 		$stateProvider
 		.state('home', {
 			url: '/',
-			templateUrl: 'home.html',
+			// templateUrl: 'home.html',
+			template: '<header-directive></header-directive><comic-directive></comic-directive>',
 			controller: function ($scope, service) {
 				$scope.loading = true;
 
@@ -37,8 +38,8 @@
 
 		.state('specific', {
 			url: '/specific', 
-			templateUrl: 'specific.html', 
-	
+			// templateUrl: 'specific.html', 
+			template: '<header-directive></header-directive><form class="navbar-form text-center" ng-submit="doThis(specific)"><input class="form-control" placeholder="enter a number" ng-model="specific"></form><comic-directive></comic-directive>',
 			controller: function ($scope, service) {
 				$scope.loading = false;
 			
@@ -56,7 +57,8 @@
 
 		.state('random', {
 			url: '/random',
-			templateUrl: '/random.html',
+			// templateUrl: '/random.html',
+			template: '<header-directive></header-directive><comic-directive></comic-directive>',
 			controller: function ($scope, service) {
 				$scope.loading = true;
 

@@ -7,21 +7,28 @@ main {
 nav {
 	display: flex;
 	justify-content: space-around;
-	font-size: 20px;
+	font-size: 2vh;
 }
 
 a {
 	text-decoration: none;
 }
 
+.form-control {
+	font-size: 3vh;
+	height: auto !important;
+}
+
 img {
+	width: 95%;
 	margin: auto;
 }
 
 #alt-text {
-	width: 60%;
+	width: 95%;
 	margin: auto;
 	text-align: center;
+	display: none;
 }
 
 .active {
@@ -32,4 +39,10 @@ img {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+}
+
+@media (max-width: 414px) {
+	#alt-text {
+		display: block;
+	}
 }

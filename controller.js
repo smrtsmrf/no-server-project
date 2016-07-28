@@ -1,30 +1,15 @@
-// (function() {
-// 	'use strict';
+(function() {
+	'use strict';
 
-// 	angular
-// 	  .module('xkcdapp')
-// 	  .controller('mainCtrl', mainCtrl);
+	angular
+	  .module('xkcdapp')
+	  .controller('mainCtrl', mainCtrl);
 
-// 	mainCtrl.$inject = ['$scope', 'service'];
+	mainCtrl.$inject = ['$scope', 'service'];
 
-// 	function mainCtrl($scope, service) {
-// 		var num = $scope.num ? $scope.num : '';
-// 		service.getComic(num).then(function (response) {
-// 			$scope.comic = response;
-// 		})
-
-// 		function doThis(stuff) {
-// 		console.log('hi');
-// 		return;
-// 		}
-// 	}
+	function mainCtrl($scope, service) {
+		
+	}
 
 
-// })();
-
-
-angular.module('xkcdapp').controller('mainCtrl', ['$scope', 'service', '$state', function ($scope, service, $state) {
-
-	
-
-}])
+})();
